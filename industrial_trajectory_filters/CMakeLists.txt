@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 2.8.3)
 project(industrial_trajectory_filters)
 
 find_package(catkin REQUIRED COMPONENTS moveit_ros_planning trajectory_msgs)
-
+add_compile_options(-std=c++11)
 catkin_package(
     CATKIN_DEPENDS moveit_ros_planning trajectory_msgs
     INCLUDE_DIRS include
